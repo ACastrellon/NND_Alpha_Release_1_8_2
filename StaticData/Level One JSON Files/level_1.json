@@ -1,0 +1,274 @@
+{
+"1.1":{
+	  "0": {
+	"word_type": "NOUN",
+	"english": "SAKURA-SAN",
+	"reading": "さくら##",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"form_id": "0",
+	"root": "さくら##",
+	"ending": ""
+ 	 },
+	  "1": {
+		"word_type": "NOUN",
+		"english": "STUDENT",
+		"reading": "####",
+		"prop_stamps": ["none"],
+		"status_stamps": ["none"],
+		"tense_stamps":["positive","non-past"],
+		"comp_stamps":["none"],
+		"form_id": "0",
+		"root": "###",
+		"ending": ""
+  }
+},
+
+"1.2":{
+	 "0": {
+	"word_type": "NOUN",
+	"english": "SMITH-SAN",
+	"reading": "####",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"form_id": "0",
+	"root": "###",
+	"ending": "###"
+ 	 },
+	  "1": {
+		"word_type": "NOUN",
+		"english": "AMERICAN",
+		"reading": "####",
+		"prop_stamps": ["none"],
+		"status_stamps": ["none"],
+		"tense_stamps":["positive","non-past"],
+		"comp_stamps":["none"],
+		"form_id": "0",
+		"root": "###",
+		"ending": "###"
+  }
+},
+
+"1.3":{
+	 "0": {
+	"word_type": "NOUN",
+	"english": "CHAN-SAN",
+	"reading": "####",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"form_id": "0",
+	"root": "###",
+	"ending": ""
+ 	 },
+	  "1": {
+		"word_type": "NOUN",
+		"english": "SECRETARY",
+		"reading": "####",
+		"prop_stamps": ["none"],
+		"status_stamps": ["none"],
+		"tense_stamps":["positive","non-past"],
+		"comp_stamps":["none"],
+		"form_id": "0",
+		"root": "###",
+		"ending": ""
+  }
+},
+
+"1.4":{
+	 "0": {
+	"word_type": "NOUN",
+	"english": "RAJA-SAN",
+	"reading": "####",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"form_id": "0",
+	"root": "###",
+	"ending": ""
+ 	 },
+	  "1": {
+		"word_type": "NOUN",
+		"english": "INTERN",
+		"reading": "####",
+		"prop_stamps": ["none"],
+		"status_stamps": ["none"],
+		"tense_stamps":["positive","non-past"],
+		"comp_stamps":["none"],
+		"form_id": "0",
+		"root": "###",
+		"ending": ""
+  }
+},
+
+"1.5":{
+	 "0": {
+	"word_type": "NOUN",
+	"english": "TANAKA-SAN",
+	"reading": "####",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"form_id": "0",
+	"root": "###",
+	"ending": ""
+ 	 },
+	  "1": {
+		"word_type": "NOUN",
+		"english": "TEACHER",
+		"reading": "####",
+		"prop_stamps": ["none"],
+		"status_stamps": ["none"],
+		"tense_stamps":["positive","non-past"],
+		"comp_stamps":["none"],
+		"form_id": "0",
+		"root": "###",
+		"ending": ""
+  }
+},
+
+"1.6":{
+	 "0": {
+	"word_type": "NOUN",
+	"english": "BROWN-SAN",
+	"reading": "####",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"form_id": "0",
+	"root": "###",
+	"ending": ""
+ 	 },
+	  "1": {
+		"word_type": "NOUN",
+		"english": "BANKER",
+		"reading": "####",
+		"prop_stamps": ["none"],
+		"status_stamps": ["none"],
+		"tense_stamps":["positive","non-past"],
+		"comp_stamps":["none"],
+		"form_id": "0",
+		"root": "###",
+		"ending": ""
+  }
+},
+
+"1.7":{
+	 "0": {
+	"word_type": "NOUN",
+	"english": "JEFFRIES-SAN",
+	"reading": "####",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"form_id": "0",
+	"root": "###",
+	"ending": ""
+ 	 },
+	  "1": {
+		"word_type": "NOUN",
+		"english": "PILOT",
+		"reading": "####",
+		"prop_stamps": ["none"],
+		"status_stamps": ["none"],
+		"tense_stamps":["positive","non-past"],
+		"comp_stamps":["none"],
+		"form_id": "0",
+		"root": "###",
+		"ending": ""
+  }
+},
+
+"1.8":{
+	 "0": {
+	"word_type": "NOUN",
+	"english": "BOB-SAN",
+	"reading": "####",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"form_id": "0",
+	"root": "###",
+	"ending": ""
+ 	 },
+	  "1": {
+		"word_type": "NOUN",
+		"english": "POLICE OFFICER",
+		"reading": "####",
+		"prop_stamps": ["none"],
+		"status_stamps": ["none"],
+		"tense_stamps":["positive","non-past"],
+		"comp_stamps":["none"],
+		"form_id": "0",
+		"root": "###",
+		"ending": ""
+  }
+},
+
+"1.9":{
+	 "0": {
+	"word_type": "NOUN",
+	"english": "BIJI-SAN",
+	"reading": "####",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"form_id": "0",
+	"root": "###",
+	"ending": ""
+ 	 },
+	  "1": {
+		"word_type": "NOUN",
+		"english": "SALARYMAN",
+		"reading": "####",
+		"prop_stamps": ["none"],
+		"status_stamps": ["none"],
+		"tense_stamps":["positive","non-past"],
+		"comp_stamps":["none"],
+		"form_id": "0",
+		"root": "###",
+		"ending": ""
+  }
+},
+
+"1.10":{
+	 "0": {
+	"word_type": "NOUN",
+	"english": "HARU-SAN",
+	"reading": "####",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"form_id": "0",
+	"root": "###",
+	"ending": ""
+ 	 },
+	  "1": {
+		"word_type": "NOUN",
+		"english": "TRAIN CONDUCTOR",
+		"reading": "####",
+		"prop_stamps": ["none"],
+		"status_stamps": ["none"],
+		"tense_stamps":["positive","non-past"],
+		"comp_stamps":["none"],
+		"form_id": "0",
+		"root": "###",
+		"ending": ""
+  }
+}
+
+
+
+}

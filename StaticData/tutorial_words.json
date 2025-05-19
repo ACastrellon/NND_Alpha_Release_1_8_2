@@ -1,0 +1,41 @@
+{
+  "0": {
+	"word_type": "NOUN",
+	"english": "SAKURA-SAN",
+	"reading": "さくらさん",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"form_id": "0",
+	"root": "さくらさん",
+	"ending": ""
+  },
+  "1": {
+	"word_type": "ADJ",
+	"english": "INTELLIGENT",
+	"reading": "かしこい",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"form_id": "0",
+	"root": "かしこ",
+	"ending": "い"
+  },
+  "2": {
+	"word_type": "VERB",
+	"english": "READ",
+	"reading": "よむ",
+	"verb_type": "godan",
+	"prop_stamps": ["godan"],
+	"status_stamps": ["2"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"root": "よ",
+	"ending": "む",
+	"consonant_id": "5",
+	"form_id": "2"
+  },
+  
+}

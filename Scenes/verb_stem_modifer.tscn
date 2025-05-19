@@ -1,0 +1,64 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6bvmb02rl5l8"]
+
+[ext_resource type="Script" path="res://Scripts/verb_bay.gd" id="1_cokib"]
+
+[node name="VerbStemModifer" type="Panel"]
+custom_minimum_size = Vector2(280, 0)
+anchors_preset = -1
+anchor_right = 0.243
+anchor_bottom = 0.278
+offset_right = 0.0639954
+offset_bottom = -0.144012
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.993
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_right = -0.0400085
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="VerbBay" type="VBoxContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(130, 180)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+script = ExtResource("1_cokib")
+
+[node name="VerbChangerUI" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="ButtonLabels" type="Label" parent="HBoxContainer/VerbChangerUI"]
+layout_mode = 2
+text = "Cycle Ending"
+
+[node name="CycleEndingUp" type="Button" parent="HBoxContainer/VerbChangerUI"]
+layout_mode = 2
+text = "^"
+
+[node name="CycleEndingDown" type="Button" parent="HBoxContainer/VerbChangerUI"]
+layout_mode = 2
+text = "v"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.199
+anchor_top = 0.061
+anchor_right = 0.571
+anchor_bottom = 0.2
+offset_left = -0.118004
+offset_top = 1.02
+offset_right = -0.0220184
+text = "Verb Changer"
+
+[connection signal="pressed" from="HBoxContainer/VerbChangerUI/CycleEndingUp" to="HBoxContainer/VerbBay" method="_on_cycle_ending_up_pressed"]
+[connection signal="pressed" from="HBoxContainer/VerbChangerUI/CycleEndingDown" to="HBoxContainer/VerbBay" method="_on_cycle_ending_down_pressed"]

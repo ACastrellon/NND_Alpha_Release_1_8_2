@@ -1,0 +1,17 @@
+# No.8
+Conductor: Awesome! \
+You added an [b]ENGINE[/b] to the Train Bay!
+Conductor: You'll notice that there is a "#" on the [b]ENGINE[/b].\
+Just like the [b]CARRIAGE[/b], that is the [b]ENGINE'S[/b] [b]BADGE[/b]!
+label RepeatSteps
+Conductor: Let's change the [b]BADGE[/b] on the [b]ENGINE[/b] to "い".
+Conductor: Just like before, use the up and down arrows on the right-side of the screen to cycle the [b]BADGE[/b].
+Conductor: Keep cycling the [b]BADGE[/b] until it is "い".
+Conductor: Ready to try?
+- Yep, Im ready!
+- Please repeat the steps.
+	Conductor: No problem!
+	jump RepeatSteps
+Conductor: Great!\
+Go ahead!
+[end_timeline]

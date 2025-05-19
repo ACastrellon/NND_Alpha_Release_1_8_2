@@ -1,0 +1,2 @@
+# JPPhraseBuilder
+ Nihingo no Denshya

@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dkjapetlg4n0l"]
+
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_gfvuw"]
+[ext_resource type="PackedScene" uid="uid://vyja8xf1uy8v" path="res://Scenes/WordBankVisual.tscn" id="2_dkxoi"]
+[ext_resource type="PackedScene" uid="uid://qsbkrquy534k" path="res://Scenes/TrainBuilderUI.tscn" id="3_djny6"]
+
+[node name="Main" type="VBoxContainer" node_paths=PackedStringArray("WordBankNode")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gfvuw")
+WordBankNode = NodePath("WordBankVisual")
+
+[node name="WordBankVisual" parent="." instance=ExtResource("2_dkxoi")]
+layout_mode = 2
+
+[node name="TrainBuilderUI" parent="." instance=ExtResource("3_djny6")]
+layout_mode = 2

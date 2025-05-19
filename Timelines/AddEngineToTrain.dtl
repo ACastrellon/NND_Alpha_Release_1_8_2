@@ -1,0 +1,19 @@
+# No.10
+Conductor: Excellent!
+Conductor: You are getting the hang of it!
+Conductor: Since the [b]ENGINE[/b] has a vaild [b]TICKET[/b] and [b]BADGE[/b], you can place it in the Train Station!
+label RepeatSteps
+Conductor: Go ahead and place the い-[b]ENGINE[/b],\
+ [b]AFTER[/b] the が -[b]CARRIAGE[/b].
+Conductor: To do this, drag and drop the い-[b]ENGINE[/b] to the [b]RIGHT[/b] of the が -[b]CARRIAGE[/b]!
+Conductor: When done correctly, the order of the Train Cars from left to right will be...
+Conductor: BLACK が -[b]CARRIAGE[/b] followed by\
+BLACK い-[b]ENGINE[/b]
+Conductor: Got it?
+- Yes, I got it
+- Please repeat the steps.
+	Conductor: Alright, one more time!
+	jump RepeatSteps
+Conductor: Great!\
+You got this!
+[end_timeline]

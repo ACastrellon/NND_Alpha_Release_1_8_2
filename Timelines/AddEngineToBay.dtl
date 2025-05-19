@@ -1,0 +1,19 @@
+# No.7
+Conductor: Perfect!
+Conductor: You have now started to create a Train!
+Conductor: A Train is a series of vaild Train Cars representing a sentence in Japanese.
+Conductor: As you add more [b]CARRAIGES[/b] and [b]ENGINES[/b] you will be able to make complete, logical sentences in Japanese!
+Conductor: So far, so good!
+label RepeatSteps
+Conductor: Let's try adding an [b]ENGINE[/b] to the Train Bay.
+Conductor: Go over to the drop down menu on the left side of the screen and select "Engine".
+Conductor: Then click on "Add Train Link".
+Conductor: When done correctly, an [b]ENGINE[/b] will appear in the Train Bay.
+Conductor: Got it?
+- Yes, I got it!
+- Please repeat the steps.
+	Conductor: Sure!
+	jump RepeatSteps
+Conductor: Alright, then!\
+Give it a go!
+[end_timeline]

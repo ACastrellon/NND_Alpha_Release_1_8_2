@@ -1,0 +1,162 @@
+{
+  "0": {
+	"word_type": "NOUN",
+	"english": "SAKURA-SAN",
+	"reading": "さくらさん",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"form_id": "0",
+	"root": "さくら",
+	"ending": ""
+  },
+
+  "1": {
+	"word_type": "NOUN",
+	"english": "STUDENT",
+	"reading": "がくせい",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"form_id": "0",
+	"root": "がくせい",
+	"ending": ""
+  },
+
+  "2": {
+	"word_type": "ADJ",
+	"english": "INTELLIGENT",
+	"reading": "かしこい",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"form_id": "0",
+	"root": "かしこ",
+	"ending": "い"
+  },
+
+  "3": {
+	"word_type": "ADJ",
+	"english": "BIG",
+	"reading": "おおきい",
+	"prop_stamps": ["none"],
+	"status_stamps": ["0"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"root": "おおき",
+	"ending": "い",
+	"form_id": "0"
+  },
+
+  "4": {
+	"word_type": "ADJ",
+	"english": "NOT",
+	"reading": "ない",
+	"prop_stamps": ["helper"],
+	"status_stamps": ["0"],
+	"tense_stamps":["negative","non-past"],
+	"comp_stamps":["white-plus","red-a","red-ku"],
+	"root": "な",
+	"ending": "い",
+	"form_id": "0"
+  },
+
+  "5": {
+	"word_type": "VERB",
+	"english": "READ",
+	"reading": "よむ",
+	"verb_type": "godan",
+	"prop_stamps": ["godan"],
+	"status_stamps": ["2"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"root": "よ",
+	"ending": "む",
+	"consonant_id": "5",
+	"form_id": "2"
+  },
+
+  "6": {
+	"word_type": "VERB",
+	"english": "EAT",
+	"reading": "たべる",
+	"verb_type": "ichidan",
+	"prop_stamps": ["ichidan"],
+	"status_stamps": ["2"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"root": "たべ",
+	"ending": "る",
+	"consonant_id": "6",
+	"form_id": "0"
+  },
+
+  "7": {
+	"word_type": "NOUN",
+	"english": "CAKE",
+	"reading": "ケキ",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"form_id": "0",
+	"root": "ケキ",
+	"ending": ""
+  },
+
+  "8": {
+	"word_type": "NOUN",
+	"english": "BOOK",
+	"reading": "ほん",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"form_id": "0",
+	"root": "ほん",
+	"ending": ""
+  },
+
+  "9": {
+	"word_type": "NOUN",
+	"english": "SHCOOL",
+	"reading": "がっこう",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"form_id": "0",
+	"root": "がっこう",
+	"ending": ""
+  },
+
+  "10": {
+	"word_type": "NOUN",
+	"english": "YESTERDAY",
+	"reading": "きのう",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","past"],
+	"comp_stamps":["none"],
+	"root": "きのう",
+	"ending": "",
+	"form_id": "0"
+  },
+
+  "11": {
+	"word_type": "NOUN",
+	"english": "TOMORROW",
+	"reading": "あした",
+	"prop_stamps": ["none"],
+	"status_stamps": ["none"],
+	"tense_stamps":["positive","non-past"],
+	"comp_stamps":["none"],
+	"root": "あした",
+	"ending": "",
+	"form_id": "0"
+  }
+
+}

@@ -1,0 +1,80 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfho4cyjx48um"]
+
+[ext_resource type="Script" path="res://Scripts/word_visual.gd" id="1_fyjo1"]
+
+[node name="WordColorRect" type="ColorRect" node_paths=PackedStringArray("wordReading", "wordEnglish", "wordColor", "compStamps", "propStamps", "tenseStamps", "statusStamps")]
+custom_minimum_size = Vector2(170, 100)
+anchors_preset = -1
+anchor_right = 0.148
+anchor_bottom = 0.154
+offset_right = -40.496
+offset_bottom = 0.207993
+size_flags_vertical = 4
+script = ExtResource("1_fyjo1")
+wordReading = NodePath("MainCont/MiddlePart/WordLabels/WordReading")
+wordEnglish = NodePath("MainCont/MiddlePart/WordLabels/WordEnglish")
+wordColor = NodePath(".")
+compStamps = NodePath("MainCont/CompStamps")
+propStamps = NodePath("MainCont/MiddlePart/PropStamps")
+tenseStamps = NodePath("MainCont/MiddlePart/TenseStamps")
+statusStamps = NodePath("MainCont/StatusStamps")
+
+[node name="MainCont" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+alignment = 1
+
+[node name="CompStamps" type="VBoxContainer" parent="MainCont"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+alignment = 1
+
+[node name="MiddlePart" type="VBoxContainer" parent="MainCont"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+
+[node name="PropStamps" type="HBoxContainer" parent="MainCont/MiddlePart"]
+custom_minimum_size = Vector2(100, 20)
+layout_mode = 2
+alignment = 1
+
+[node name="WordLabels" type="VBoxContainer" parent="MainCont/MiddlePart"]
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 2
+alignment = 1
+
+[node name="WordReading" type="Label" parent="MainCont/MiddlePart/WordLabels"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Word Reading"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="WordEnglish" type="Label" parent="MainCont/MiddlePart/WordLabels"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Word English"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TenseStamps" type="HBoxContainer" parent="MainCont/MiddlePart"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+alignment = 1
+
+[node name="StatusStamps" type="VBoxContainer" parent="MainCont"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+alignment = 1

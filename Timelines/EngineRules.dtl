@@ -1,0 +1,26 @@
+# No.9
+Conductor: Perfect!
+Conductor: You cycled the badge to "い".
+Conductor: Since you cycled the [b]BADGE[/b] to "い",\
+We will refer to this Train Car as a い-[b]ENGINE[/b].
+Conductor: The next part can be a lot of information so pay close attention!
+label EngineRules
+Conductor: The type of words that an [b]ENGINE[/b] accepts, depends on its badge!
+Conductor: A COPULA ENGINE, engine with a だ badge, will only accept a NOUN!\
+だ - [b]ENGINE[/b] will only accept a [color=GREEN]GREEN[color=WHITE] ticket!
+Conductor: A VERB ENGINE, engine with a う  badge, will only accept a VERB!\
+う- [b]ENGINE[/b] will only accept a [color=BLUE]BLUE[color=WHITE] ticket!
+Conductor: An ADJECTIVE ENGINE, engine with a い badge, will only accept a ADJECTIVE!\
+い-[b]ENGINE[/b] will only accept a [color=CYAN]CYAN[color=WHITE] ticket!
+Conductor: That was a lot to take take in!
+Conductor: Ready to move on?
+- Yes , Im ready to move on.
+	Conductor: Great! Let's keep going!
+- Please repeat the rules for engines and tickets
+	Conductor: Alright, here are the rules one more time!
+	jump EngineRules
+Conductor: The [b]ENGINE[/b] in the Train Bay is an Adjective Engine or い- [b]ENGINE[/b].
+Conductor: Since it is an い- [b]ENGINE[/b], it will only accecpt a [color=CYAN]CYAN[color=WHITE] ticket!
+Conductor: We only have one word in the word back that is an Adjective.
+Conductor: Go ahead and place it in the engine!
+[end_timeline]

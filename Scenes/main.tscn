@@ -1,0 +1,75 @@
+[gd_scene load_steps=9 format=3 uid="uid://dkjapetlg4n0l"]
+
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_gfvuw"]
+[ext_resource type="PackedScene" uid="uid://vyja8xf1uy8v" path="res://Scenes/WordBankVisual.tscn" id="2_dkxoi"]
+[ext_resource type="PackedScene" uid="uid://qsbkrquy534k" path="res://Scenes/TrainBuilderUI.tscn" id="3_djny6"]
+[ext_resource type="PackedScene" uid="uid://c6bvmb02rl5l8" path="res://Scenes/verb_stem_modifer.tscn" id="3_km3wc"]
+[ext_resource type="PackedScene" uid="uid://u1s55l0qujhv" path="res://Scenes/noun_modifier.tscn" id="3_wphhv"]
+[ext_resource type="PackedScene" uid="uid://bi6al460mrfr6" path="res://Scenes/Trainstation.tscn" id="4_6vr3p"]
+[ext_resource type="PackedScene" uid="uid://cam8k5yxgdg0l" path="res://Scenes/adjective_stem_modifer.tscn" id="4_8qi43"]
+[ext_resource type="PackedScene" uid="uid://wy3k641sa7hw" path="res://Scenes/time_tense_modifer.tscn" id="5_rpgsf"]
+
+[node name="Main" type="VBoxContainer" node_paths=PackedStringArray("WordBankNode")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -640.0
+offset_top = -429.0
+offset_right = 640.0
+offset_bottom = 429.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+script = ExtResource("1_gfvuw")
+WordBankNode = NodePath("HBoxContainer/WordBankVisual")
+
+[node name="HBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="LevelSelect" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "Exit to Level Select"
+
+[node name="WordBankVisual" parent="HBoxContainer" instance=ExtResource("2_dkxoi")]
+custom_minimum_size = Vector2(1280, 150)
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="WordModifers" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(1280, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+alignment = 1
+
+[node name="NounModifier" parent="WordModifers" instance=ExtResource("3_wphhv")]
+layout_mode = 2
+
+[node name="VerbStemModifer" parent="WordModifers" instance=ExtResource("3_km3wc")]
+layout_mode = 2
+
+[node name="AdjectiveStemModifer" parent="WordModifers" instance=ExtResource("4_8qi43")]
+layout_mode = 2
+
+[node name="TimeTenseModifer" parent="WordModifers" instance=ExtResource("5_rpgsf")]
+layout_mode = 2
+
+[node name="TrainBuilderUI" parent="." instance=ExtResource("3_djny6")]
+custom_minimum_size = Vector2(1280, 215)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="TrainBay" parent="TrainBuilderUI/Panel/TrainBayUI" index="0" node_paths=PackedStringArray("wordBankNode")]
+wordBankNode = NodePath("../../../../HBoxContainer/WordBankVisual")
+
+[node name="Trainstation" parent="." instance=ExtResource("4_6vr3p")]
+custom_minimum_size = Vector2(1280, 190)
+layout_mode = 2
+
+[connection signal="pressed" from="HBoxContainer/LevelSelect" to="." method="_on_level_select_pressed"]
+[connection signal="child_order_changed" from="HBoxContainer/WordBankVisual" to="HBoxContainer/WordBankVisual" method="_on_child_order_changed"]
+
+[editable path="TrainBuilderUI"]

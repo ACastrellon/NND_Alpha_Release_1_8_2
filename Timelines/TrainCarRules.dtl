@@ -1,0 +1,33 @@
+# No.5
+Conductor: Perfect! You cycled the badge on the Train Car!
+Conductor: Since you cycled the [b]BADGE[/b] to "が",\
+We will refer to this Train Car as a\
+が -[b]CARRIAGE[/b].
+Conductor: We will go into much more detail about Train Car [b]BADGES[/b] and their meaning in later levels.
+Conductor: Just know, that different [b]BADGES[/b] gives us more information the role the word is playing in the sentence!
+Conductor: Now, we will be adding a ticket to the\
+が -[b]CARRIAGE[/b]!
+Conductor: [color=YELLOW][b]!!! Important Note !!![/b] [color=WHITE]\
+Specific Train Cars will only accept speciific [b]TICKETS[/b]!
+label TheCarriageRules
+Conductor: [b]CARRIAGES[/b] will only accept a [color=GREEN]NOUN[color=WHITE]!
+Conductor: In other words a [b]CARRIAGE[/b] will only accept a [color=GREEN]GREEN[color=WHITE] [b]TICKET[/b]!
+Conductor: Makes sense?
+- Yes, It makes sense
+- Please repeat the rules for Carriages, one more time?
+	Conductor: Sure, thing!
+	jump TheCarriageRules
+Conductor: Great!
+label RepeatSteps
+Conductor: Let's add a [color=GREEN]NOUN[color=WHITE] to the [b]CARRIAGE[/b]!
+Conductor: There is only one [color=GREEN]NOUN[color=WHITE] in our word bank, represented by a [color=GREEN]GREEN[color=WHITE]  [b]TICKET[/b]!
+Conductor: To place the  [b]TICKET[/b] into the [b]CARRIAGE[/b], left-click and drag the [b]TICKET[/b] onto the [b]CARRIAGE[/b] then release the mouse.
+Conductor: When done correctly, the  [b]TICKET[/b] will be removed from your Word Bank and placed on to the [b]CARRIAGE[/b]!
+Conductor: Makes sense?
+- Yes, It makes sense.
+- Please repeat the instructions.
+	Conductor: Sure!
+	jump RepeatSteps
+Conductor: Great!\
+Go for it!
+[end_timeline]

@@ -1,0 +1,25 @@
+# No.12
+Conductor: Way to go!
+Conductor: You have come so far!
+Conductor: You are now able to move Train Cars around to different positions in the Train Station.
+Conductor: This will come in handy as you make longer and more complicated sentences!
+Conductor: Now, try to add the remaining [b]TICKET[/b] from the Word Bank to the end of the Train!
+Conductor: The last word is a [color=BLUE]BLUE[color=WHITE] [b]TICKET[/b]!\
+This means it is a [color=BLUE]VERB[color=WHITE]!
+Conductor: In this case, you will need to add an [b]ENGINE[/b] to the Train!
+Conductor: Specifically, a う-[b]ENGINE[/b]!
+Conductor: You know what to do from here!
+label RepeatSteps
+Conductor: -Add an [b]ENGINE[/b] to the Train Bay\
+-Cycle the badge to "う"\
+....
+Conductor: -Add the [color=BLUE]VERB[color=WHITE] [b]TICKET[/b] to the the new う-[b]ENGINE[/b].\
+-Add the vaild う-[b]ENGINE[/b] to the end of the Train.
+Conductor: Got it?
+- I got it!
+- Please repeat the steps.
+	Conductor: Certainly!
+	jump RepeatSteps
+Conductor: Awesome! \
+Go for it!
+[end_timeline]

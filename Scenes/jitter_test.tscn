@@ -1,0 +1,147 @@
+[gd_scene load_steps=7 format=3 uid="uid://b7d11oql0n28o"]
+
+[ext_resource type="Texture2D" uid="uid://d0r1lyp6vd5st" path="res://PNGs/PixelArt/CarriageWhite.png" id="1_j6kkb"]
+[ext_resource type="Script" path="res://Scripts/jitter_jump.gd" id="2_b50lm"]
+[ext_resource type="Texture2D" uid="uid://0nknl16jkopn" path="res://PNGs/PixelArt/Ticketo1.png" id="3_7o2w7"]
+[ext_resource type="Texture2D" uid="uid://clqfg32o5u0mo" path="res://PNGs/PixelArt/EngineBlack.png" id="3_ycgyr"]
+[ext_resource type="Texture2D" uid="uid://d3wgdvsnpoifu" path="res://PNGs/PixelArt/CarriageBlack.png" id="4_6ip2b"]
+[ext_resource type="Texture2D" uid="uid://cgk8h2pdtfc4u" path="res://PNGs/PixelArt/Ticketo2.png" id="6_o0p51"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(-279, -97)
+scale = Vector2(1.5, 1.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(390, 261)
+scale = Vector2(0.302, 0.3)
+texture = ExtResource("1_j6kkb")
+script = ExtResource("2_b50lm")
+max_pitch_angle = 2.0
+y_nought = 260.0
+max_jump_height = 10.0
+x_nought = 3.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(-96, -83.6667)
+scale = Vector2(0.741446, 0.673611)
+texture = ExtResource("3_7o2w7")
+
+[node name="Label" type="Label" parent="Sprite2D/Sprite2D"]
+anchors_preset = -1
+anchor_right = 0.919
+anchor_bottom = 0.913
+offset_left = -152.0
+offset_top = -118.0
+offset_right = -191.896
+offset_bottom = -143.944
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "にほんご"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Bagde" type="Label" parent="Sprite2D"]
+anchors_preset = -1
+anchor_left = 0.598
+anchor_top = 0.147
+anchor_right = 0.862
+anchor_bottom = 0.525
+offset_left = -319.72
+offset_top = -264.91
+offset_right = -319.68
+offset_bottom = -265.25
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 120
+text = "の"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(582, 261)
+scale = Vector2(0.302, 0.3)
+texture = ExtResource("4_6ip2b")
+script = ExtResource("2_b50lm")
+max_pitch_angle = 2.0
+y_nought = 260.0
+max_jump_height = 10.0
+x_nought = 2.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D2"]
+position = Vector2(-96, -83.6667)
+scale = Vector2(0.741446, 0.673611)
+texture = ExtResource("3_7o2w7")
+
+[node name="Label" type="Label" parent="Sprite2D2/Sprite2D"]
+anchors_preset = -1
+anchor_right = 0.919
+anchor_bottom = 0.913
+offset_left = -152.0
+offset_top = -118.0
+offset_right = -191.896
+offset_bottom = -143.944
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "でんしゃ"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Bagde" type="Label" parent="Sprite2D2"]
+anchors_preset = -1
+anchor_left = 0.598
+anchor_top = 0.147
+anchor_right = 0.862
+anchor_bottom = 0.525
+offset_left = -319.72
+offset_top = -264.91
+offset_right = -319.68
+offset_bottom = -265.25
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 120
+text = "が"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(775, 260)
+scale = Vector2(0.302, 0.3)
+texture = ExtResource("3_ycgyr")
+script = ExtResource("2_b50lm")
+max_pitch_angle = 2.0
+y_nought = 260.0
+max_jump_height = 10.0
+x_nought = 1.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D3"]
+position = Vector2(-119.205, -26.6666)
+scale = Vector2(0.741446, 0.673611)
+texture = ExtResource("6_o0p51")
+
+[node name="Label" type="Label" parent="Sprite2D3/Sprite2D"]
+anchors_preset = -1
+anchor_right = 0.919
+anchor_bottom = 0.913
+offset_left = -152.0
+offset_top = -118.0
+offset_right = -191.896
+offset_bottom = -143.944
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "たのしい"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Bagde" type="Label" parent="Sprite2D3"]
+anchors_preset = -1
+anchor_left = 0.598
+anchor_top = 0.256
+anchor_right = 0.862
+anchor_bottom = 0.633
+offset_left = -319.806
+offset_top = -280.027
+offset_right = -319.766
+offset_bottom = -279.807
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 120
+text = "い"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://bljseyomc1w30"]
+
+[ext_resource type="Texture2D" uid="uid://bbni8m6q5jyy5" path="res://PNGs/Stamps/BlueStamp.png" id="1_iei7d"]
+[ext_resource type="Script" path="res://Scripts/stamp_visual.gd" id="2_dg1sl"]
+
+[node name="StampVisual" type="TextureRect" node_paths=PackedStringArray("stampLabel")]
+custom_minimum_size = Vector2(20, 20)
+anchors_preset = -1
+anchor_right = 0.018
+anchor_bottom = 0.025
+offset_left = 1.0
+offset_right = 30.264
+offset_bottom = 23.8
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+size_flags_horizontal = 6
+size_flags_vertical = 6
+texture = ExtResource("1_iei7d")
+expand_mode = 3
+script = ExtResource("2_dg1sl")
+stampLabel = NodePath("HBoxContainer/StampLabel")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.04
+anchor_bottom = 0.925
+alignment = 1
+
+[node name="StampLabel" type="Label" parent="HBoxContainer"]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "#"
+horizontal_alignment = 1
+vertical_alignment = 1

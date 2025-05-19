@@ -1,0 +1,19 @@
+# No.3
+Conductor: Now let's move on to Train Cars!
+label RepeatSteps
+Conductor: On left side of the screen, you will see a drop-down menu.\
+The drop-down menu will show two options; \
+[b]CARRIAGE[/b] and [b]ENGINE[/b].
+Conductor: Let's try adding a [b]CARRIAGE[/b] to the Train Bay.
+Conductor: To add a [b]CARRIAGE[/b] to the Train Bay...
+Conductor: Click the drop-down menu and select "Carriage"...
+Conductor: Then hit the button labeled "Add Train Car"...
+Conductor: When done correctly, you will see a [b]CARRIAGE[/b] appear in the Train Bay.
+Conductor: Ready to give it a try?
+- Yes!
+- Can you repeat the instructions?
+	Conductor: Certainly!
+	jump RepeatSteps
+Conductor: Great!\
+Give it a try!
+[end_timeline]

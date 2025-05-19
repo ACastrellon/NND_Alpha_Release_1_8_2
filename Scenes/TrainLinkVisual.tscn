@@ -1,0 +1,66 @@
+[gd_scene load_steps=4 format=3 uid="uid://dffc0owkbvdh5"]
+
+[ext_resource type="Texture2D" uid="uid://dq6ffqnq2o60b" path="res://PNGs/Traincars/WhiteCarriage.png" id="1_r1lih"]
+[ext_resource type="Script" path="res://Scripts/TrainLinkVisual.gd" id="2_uqwhv"]
+[ext_resource type="Script" path="res://Scripts/word_vis_holder.gd" id="3_ma1ee"]
+
+[node name="TrainLinkTextureRect" type="TextureRect" node_paths=PackedStringArray("trainVisualTexture", "trainVisualBadge", "wordHolder")]
+custom_minimum_size = Vector2(280, 165)
+anchors_preset = -1
+anchor_right = 0.243
+anchor_bottom = 0.255
+offset_right = 0.0639954
+offset_bottom = -0.23999
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+texture = ExtResource("1_r1lih")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("2_uqwhv")
+trainVisualTexture = NodePath(".")
+trainVisualBadge = NodePath("HBoxContainer/TrainLinkBadge")
+wordHolder = NodePath("HBoxContainer/WordVisHolder")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.171
+anchor_top = 0.267
+anchor_right = 0.514
+anchor_bottom = 0.667
+offset_left = 0.119999
+offset_top = -0.0550041
+offset_right = 0.0800018
+offset_bottom = -0.0550079
+mouse_filter = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.168
+anchor_top = 0.109
+anchor_right = 0.825
+anchor_bottom = 0.697
+offset_left = -0.0400047
+offset_top = 0.0149994
+offset_right = -5.00002
+offset_bottom = -0.00500488
+alignment = 1
+
+[node name="WordVisHolder" type="HBoxContainer" parent="HBoxContainer" node_paths=PackedStringArray("trainVis")]
+custom_minimum_size = Vector2(130, 0)
+layout_mode = 2
+script = ExtResource("3_ma1ee")
+trainVis = NodePath("../..")
+
+[node name="TrainLinkBadge" type="Label" parent="HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "#"
+vertical_alignment = 1
+
+[connection signal="child_order_changed" from="HBoxContainer/WordVisHolder" to="." method="_on_word_vis_holder_child_order_changed"]

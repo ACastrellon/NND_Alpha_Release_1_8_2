@@ -1,0 +1,11 @@
+# No.1
+Conductor: Welcome to the Nihongo No Densha tutorial! \
+(click to continue)
+Conductor: I will be showing you how to navigate the user interface and some of the basic controls!
+Conductor: This tutorial will [b]NOT[/b] go into Japanese sentence structure.
+Conductor: But once you have mastered interface, you can then focus on learning Japanese in the following levels!
+Conductor: If at any point you would like to quit the tutorial...\
+You can click the button at the top right of the screen.
+Conductor: So, lets begin!
+do Dialogic.start_timeline("res://Timelines/GoingOverWordBank.dtl")
+[end_timeline]

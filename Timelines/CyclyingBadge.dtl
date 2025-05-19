@@ -1,0 +1,19 @@
+# No.4
+Conductor: That's it! \
+You added a [b]CARRIAGE[/b] to the Train Bay!
+Conductor: You'll notice that there is a "#" on the [b]CARRIAGE[/b].\
+That is the [b]CARRIAGE'S[/b] [b]BADGE[/b]!
+Conductor: However, "#" does not mean anything.\
+At the moment, "#" is just a placeholder.
+label RepeatSteps
+Conductor: To change the [b]BADGE[/b] on the [b]CARRIAGE[/b], click the up and down arrows on the rigth side of the screen.
+Conductor: Keep cycling the [b]BADGE[/b] unitl it is "が"
+Conductor: When done correctly, the [b]BADGE[/b] will be "が" instead of "#".
+Conductor: Ready to give it a whirl?
+- Yes, I am ready!
+- Please repeat the instructions.
+	Conductor: Will do!
+	jump RepeatSteps
+Conductor: Great!\
+Give a try!
+[end_timeline]

@@ -1,0 +1,21 @@
+# No.13
+Conductor: Awesome!\
+You did it!
+Conductor: And guess what?
+Conductor: You made yet another complete and logical Japanese sentence!
+Conductor: The sentence roughly translates too...
+Conductor: " SAKURA, [who is] INTELLIGENT, READS"
+Conductor: You are well on you way to start diving into Japanese sentence structure!
+Conductor: There is just one more thing I need to show you and that is deleting Train Cars.
+Conductor: There may be instances where you need to delete Train Cars from the Train.
+label DeleteInstructions
+Conductor: To remove a Train Car from the Train, drag and drop the Train Car you would like to delete into the Train Bay.
+Conductor: Once the Train Car is in the Train Bay, you can press the "Delete Train Car" Button to delete the Train Car.
+Conductor: Try to remove a Train Car from the Train, any one will do!
+Conductor: Makes sense?
+- Yes, it makes sense
+- Please repeat the steps.
+	Conductor: Sure thing!
+	jump DeleteInstructions
+Conductor: Great! \
+Give it a try!

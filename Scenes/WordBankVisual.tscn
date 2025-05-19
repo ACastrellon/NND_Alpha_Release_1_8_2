@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://vyja8xf1uy8v"]
+
+[ext_resource type="Script" path="res://Scripts/WordBankVisual.gd" id="1_pg313"]
+
+[node name="WordBankVisual" type="HBoxContainer"]
+custom_minimum_size = Vector2(1500, 215)
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.333
+offset_right = -2.0
+offset_bottom = -0.783997
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+script = ExtResource("1_pg313")

@@ -1,0 +1,55 @@
+{
+  "0": {
+    "word_type": "NOUN",
+    "english": "SAKURA",
+    "reading": "さくら",
+    "na_adj": false
+  },
+  "1": {
+    "word_type": "ADJ",
+    "english": "SMART",
+    "reading": "かしこい",
+    "root": "かしこ",
+    "ending": "い"
+  },
+  "2": {
+    "word_type": "VERB",
+    "english": "READ",
+    "reading": "よむ",
+    "root": "よ",
+    "ending": "む"
+  },
+  "3": {
+    "word_type": "NOUN",
+    "english": "BOOK",
+    "reading": "ほん",
+    "na_adj": false
+  },
+  "4": {
+    "word_type": "ADJ",
+    "english": "BEAUTIFUL",
+    "reading": "うつくしい",
+    "root": "うつくし",
+    "ending": "い"
+  },
+  "5": {
+    "word_type": "NOUN",
+    "english": "JAPANESE",
+    "reading": "にほんじん",
+    "na_adj": false
+  },
+  "6": {
+    "word_type": "ADJ",
+    "english": "BIG",
+    "reading": "おおきい",
+    "root": "おおき",
+    "ending": "い"
+  },
+  "7": {
+    "word_type": "VERB",
+    "english": "RUN",
+    "reading": "あるく",
+    "root": "ある",
+    "ending": "く"
+  }
+}

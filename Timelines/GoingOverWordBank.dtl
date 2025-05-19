@@ -1,0 +1,27 @@
+# No.2
+Conductor: At the very top of the screen, you will see the Word Bank.
+Conductor: Each word is being represented by a [b]TICKET[/b].
+Conductor: Each [b]TICKET[/b] contains the Hiragana reading and the English meaning.
+Conductor: Each of these [b]TICKETS[/b] have different colors representing a type of word.
+Conductor: A [color=GREEN]GREEN[color=WHITE] [b]TICKET[/b] represents a [color=GREEN]NOUN[color=WHITE].\
+A [color=CYAN]CYAN[color=WHITE] [b]TICKET[/b] represents an [color=CYAN]ADJECTIVE[color=WHITE].\
+A [color=BLUE]BLUE[color=WHITE]  [b]TICKET[/b] represents a [color=BLUE]VERB[color=WHITE].
+Conductor: In short,\
+[color=GREEN]GREEN[color=WHITE]  [b]TICKET[/b] = [color=GREEN]NOUN[color=WHITE]\
+[color=CYAN]CYAN[color=WHITE]  [b]TICKET[/b] = [color=CYAN]ADJECTIVE[color=WHITE]\
+[color=BLUE]BLUE[color=WHITE]  [b]TICKET[/b]= [color=BLUE]VERB[color=WHITE]
+Conductor: Simple, enough right?
+- Yep, got it!
+- Please go over it one more time.
+	Conductor: No problem!
+	jump 
+Conductor: Something you may have noticed are these little colorful circles on the [b]TICKETS[/b].
+Conductor: These are [b]STAMPS[/b] and they give you more information about the word.
+Conductor: For example, take a look at the [color=BLUE]BLUE[color=WHITE]  [b]TICKET[/b] on the top right of the screen.
+Conductor: You will see several [b]STAMPS[/b] and each [b]STAMP[/b] has a different meaning.
+Conductor: The [color=PURPLE]PURPLE[color=WHITE] [b]STAMP[/b] on the top of the [color=BLUE]BLUE[color=WHITE]  [b]TICKET[/b], has the number "5" on it.
+Conductor: This [b]STAMP[/b] is telling us what kind of verb it is, in this case it is a Godan verb.
+Conductor: We will not go over every type of stamp in this tutorial.
+Conductor: For now, just know that [b]STAMPS[/b] provide additional information about a specific word.
+do Dialogic.start_timeline("res://Timelines/AddingTrainCar.dtl")
+[end_timeline]

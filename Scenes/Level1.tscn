@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=3 uid="uid://tpsetxv83orj"]
+
+[ext_resource type="Script" path="res://Scripts/Level_Script.gd" id="1_m4s85"]
+[ext_resource type="Script" path="res://Scripts/WordBankVisual.gd" id="2_vvslq"]
+[ext_resource type="PackedScene" uid="uid://qsbkrquy534k" path="res://Scenes/TrainBuilderUI.tscn" id="3_wobiw"]
+[ext_resource type="Script" path="res://Scripts/trainstation.gd" id="4_b0iq3"]
+
+[node name="Control" type="Control" node_paths=PackedStringArray("WordBankNode", "trainBay", "trainStation")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m4s85")
+level_word_list = "res://StaticData/Level One JSON Files/level_1.json"
+WordBankNode = NodePath("VBoxContainer/WordBankNode")
+trainBay = NodePath("VBoxContainer/TrainBuilderUI/Panel/TrainBayUI/TrainBay")
+trainStation = NodePath("VBoxContainer/TrainStation")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -640.0
+offset_right = 640.0
+offset_bottom = 800.0
+grow_horizontal = 2
+
+[node name="WordBankNode" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+script = ExtResource("2_vvslq")
+
+[node name="TrainBuilderUI" parent="VBoxContainer" instance=ExtResource("3_wobiw")]
+layout_mode = 2
+
+[node name="TrainStation" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(1150, 215)
+layout_mode = 2
+script = ExtResource("4_b0iq3")
+
+[node name="ExitToLevelSelect" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -168.0
+offset_bottom = 32.0
+grow_horizontal = 0
+text = "Exit to Level Select"
+
+[editable path="VBoxContainer/TrainBuilderUI"]

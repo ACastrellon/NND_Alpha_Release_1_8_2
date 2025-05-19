@@ -1,0 +1,25 @@
+# No.11
+Conductor: Excellent!
+Conductor: You added the engine to the train.
+Conductor: In fact, you made a complete and logical statement in Japanese!
+Conductor: Roughly translated to English, the Sentence reads;\
+[b]SAKURA[/b] is [b]INTELLIGENT[/b]!
+Conductor: The following levels will go into much greater detail in explaining Japanses sentence structure.
+Conductor: And dont worry we will be getting to that very soon!
+Conductor: You are doing a great job so far and we are almost done!
+Conductor: Keep it up!
+Conductor: Next, we will rearrange the Train Cars in the Train!
+label RepeatSteps
+Conductor: Let's move the い-[b]ENGINE[/b] before the が-[b]CARRIAGE[/b]!
+Conductor: To do this, drag and drop the い-[b]ENGINE[/b] to the [b]LEFT[/b] of the が-[b]CARRIAGE[/b].
+Conductor: When done correctly, the order of the train cars from left to right will be...
+Conductor: WHITE い-[b]ENGINE[/b] followed by the\
+BLACK が-[b]CARRIAGE[/b]!
+Conductor: Ready to try?
+- Yes, Im ready!
+- Please repeat the steps.
+	Conductor: Okay! No problem!
+	jump RepeatSteps
+Conductor: Give it a try!
+set {TutorialVariables.OtherFlag} = true
+[end_timeline]

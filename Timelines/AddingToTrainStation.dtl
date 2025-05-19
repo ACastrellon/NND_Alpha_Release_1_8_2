@@ -1,0 +1,18 @@
+# No.6
+Conductor: Perfect!
+Conductor: We now have a vaild Train Car!
+Conductor: A vaild Train Car is any [b]CARRIAGE[/b] or [b]ENGINE[/b] that has a valid [b]BADGE[/b] and a [b]TICKET[/b]!
+Conductor: Now, you will notice at the bottom of the screen what looks like Train Platform.
+Conductor: That is called the Train Station!
+Conductor: The Train Station is where you will be able to place vaild Train Cars!
+Conductor: Since we just made a valid a Train Car, let's go ahead and place it in the Train Station!
+label RepeatSteps
+Conductor: To place the valid Train Car into the Train Station, left-click on the valid Train Car and drag it onto the Train Station, then release the mouse.
+Conductor: When done correctly, the [b]CARRIAGE[/b] will be removed from the Train Bay and placed on the Train Station!
+- Yes, Im ready!
+- Please repeat the instructions.
+	Conductor: Alright, one more time!
+	jump RepeatSteps
+Conductor: Awesome!\
+Go for it!
+[end_timeline]

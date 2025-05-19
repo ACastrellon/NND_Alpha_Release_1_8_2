@@ -1,0 +1,89 @@
+[gd_scene load_steps=2 format=3 uid="uid://qsbkrquy534k"]
+
+[ext_resource type="Script" path="res://Scripts/TrainBay.gd" id="1_qc7qk"]
+
+[node name="TrainBuilderUI" type="HBoxContainer"]
+custom_minimum_size = Vector2(1150, 215)
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.332
+offset_right = -2.0
+offset_bottom = -0.136017
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="AddDelTLinkUI" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(380, 210)
+layout_mode = 2
+
+[node name="TLinkOptions" type="OptionButton" parent="AddDelTLinkUI"]
+custom_minimum_size = Vector2(220, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+item_count = 2
+popup/item_0/text = "Carriage"
+popup/item_1/text = "Engine"
+popup/item_1/id = 1
+
+[node name="AddTLinkButton" type="Button" parent="AddDelTLinkUI"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Add Train Link
+"
+
+[node name="DeleteTLinkButton" type="Button" parent="AddDelTLinkUI"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Delete Train Link
+"
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(380, 210)
+layout_mode = 2
+
+[node name="TrainBayUI" type="VBoxContainer" parent="Panel"]
+custom_minimum_size = Vector2(380, 210)
+layout_mode = 0
+offset_right = 380.0
+offset_bottom = 219.0
+
+[node name="TrainBay" type="VBoxContainer" parent="Panel/TrainBayUI" node_paths=PackedStringArray("optionNode")]
+custom_minimum_size = Vector2(230, 165)
+layout_mode = 2
+script = ExtResource("1_qc7qk")
+optionNode = NodePath("../../../AddDelTLinkUI/TLinkOptions")
+
+[node name="BadgeUI" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(380, 210)
+layout_mode = 2
+
+[node name="BadgeUILabel" type="Label" parent="BadgeUI"]
+custom_minimum_size = Vector2(230, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Cycle Train Link Badge"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CycleBadgeUp" type="Button" parent="BadgeUI"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "^"
+
+[node name="CycleBadgeDown" type="Button" parent="BadgeUI"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "v
+"
+
+[connection signal="pressed" from="AddDelTLinkUI/AddTLinkButton" to="Panel/TrainBayUI/TrainBay" method="_on_add_tlink_button_pressed"]
+[connection signal="pressed" from="AddDelTLinkUI/DeleteTLinkButton" to="Panel/TrainBayUI/TrainBay" method="_on_delete_tlink_button_pressed"]
+[connection signal="pressed" from="BadgeUI/CycleBadgeUp" to="Panel/TrainBayUI/TrainBay" method="_on_cycle_badge_up_pressed"]
+[connection signal="pressed" from="BadgeUI/CycleBadgeDown" to="Panel/TrainBayUI/TrainBay" method="_on_cycle_badge_down_pressed"]
